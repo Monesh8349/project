@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Monesh Kapoor - Portfolio</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+   <a id="top"></a>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Monesh Kapoor</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#project">Project</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#academics">Academics</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#experience">Experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <!-- Add smooth scroll script -->
+  <script>
+    document.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        target.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+      });
+    });
+  </script>
+
+  <!-- Home Section -->
+<section id="home" class="vh-100 d-flex align-items-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h1 class="display-4 animate__animated animate__fadeIn">Hi, I'm Monesh Kapoor</h1>
+        <p class="lead animate__animated animate__fadeIn">Welcome to my portfolio! I am a passionate Software Developer and Data Analyst.</p>
+        <a href="Monesh_Kapoor_CV.pdf" class="btn btn-primary" download>Download Resume</a>
+        <a href="#project" class="btn btn-secondary">View Projects</a>
+      </div>
+      <div class="col-md-6">
+        <img src="MoneshImage.jpeg" alt="Monesh Kapoor" class="img-fluid rounded-circle animate__animated animate__fadeIn">
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- About Section -->
+  <section id="about" class="py-5">
+    <div class="container">
+      <h2 class="headingchange text-center mb-4">About Me</h2>
+      <p class="text-center">I am a results-driven Software Developer and Data Analyst with expertise in Python,MySQL,Power BI, and web technologies including Bootstrap and React JS,with experience in full-stack development,data visulization, and database management, I have worked on project optimize business operations and drive innovaation.
+        <br>
+        With a background in software development at SES IT Global Solutions and data analysis at Softude by Systematix Infotech, I bring a unique blend of technical skills and analytical thinking.
+        
+        I am also passionate about teaching and currently train students in Python and Web Development at SSI Digital Academy.
+        <br>
+        I am always egar to learn and apply new technologies, with a keen interest in AI, Machine Learning and Django. My goal is to build efficient,scalable solutions that make a meaningful impact.</p>
+    </div>
+  </section>
+
+  <!-- Work Experience Section -->
+  <section id="experience" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Work Experience</h2>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="card mb-4">
+            <div class="card-body">
+              <h5 class="card-title border-bottom p-2">Software Developer</h5>
+              <h6 class="card-subtitle mb-2 text-muted">SES IT Global Solutions Pvt. Ltd. | Sep 2023 - Mar 2024</h6>
+              <ul>
+                <li>Designed and developed user-centric frontend interfaces for 'Property Selling' and 'Recycling Products' websites</li>
+                <li>Utilized HTML5, CSS3, and JavaScript for seamless user experiences</li>
+                <li>Collaborated with cross-functional teams for effective project execution</li>
+              </ul>
+            </div>
+          </div>
+          <div class="card mb-4">
+            <div class="card-body">
+              <h5 class="card-title border-bottom p-2">Data Analyst</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Softude By Systematix Infotech | May 2022 - Dec 2022</h6>
+              <ul>
+                <li>Designed and deployed interactive dashboards and reports using Power BI</li>
+                <li>Managed complex data sets using MySQL database</li>
+                <li>Ensured data integrity and accuracy for business insights</li>
+              </ul>
+            </div>
+          </div>
+          <div class="card mb-4">
+            <div class="card-body">
+              <h5 class="card-title border-bottom p-2">Python Intern</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Robotronix India Pvt. Ltd. | Mar 2021 - May 2021</h6>
+              <ul>
+                <li>Completed internship in Python programming during Bachelor's program</li>
+                <li>Gained hands-on experience in Python development</li>
+                <li>Developed practical skills for future projects</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="headingchange text-center mb-4">Skills</h2>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title text-center border-bottom p-2">Web Development</h5>
+              <ul class="list-unstyled text-center">
+                <li>HTML & CSS</li>
+                <li>Bootstrap</li>
+                <li>JavaScript</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title text-center border-bottom p-2">Programming</h5>
+              <ul class="list-unstyled text-center">
+                <li>C & C++</li>
+                <li>Python</li>
+                <li>PHP</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title text-center border-bottom p-2">Data & Tools</h5>
+              <ul class="list-unstyled text-center">
+                <li>MySQL Database</li>
+                <li>React JS</li>
+                <li>Power BI</li>
+                <li>Excel</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Academics Section -->
+  <section id="academics" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="headingchange text-center mb-4">Academics</h2>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="card mb-4">
+            <div class="card-body">
+              <h5 class="card-title">Bachelor of Computer Science & Engineering</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Chameli Devi Group of Institution, Indore | 2018 - 2022</h6>
+              <p class="card-text">CGPA: 7.86</p>
+            </div>
+          </div>
+          <div class="card mb-4">
+            <div class="card-body">
+              <h5 class="card-title">Senior Secondary School Certificate (10+2)</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Board of Secondary Education M.P | 2017 - 2018</h6>
+              <p class="card-text">Percentage: 66.6%</p>
+            </div>
+          </div>
+          <div class="card mb-4">
+            <div class="card-body">
+              <h5 class="card-title">High School Certificate (10th)</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Board of Secondary Education M.P | 2015 - 2016</h6>
+              <p class="card-text">Percentage: 70.6%</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- Project Section -->
+    <section id="project" class="py-5">
+      <div class="container cardcontainer">
+        <h2 class="headingchange text-center mb-4">Projects</h2>
+        <div class="row d-flex justify-content-around">
+          
+          <div class="card col-md-4 custom-width" >
+            <img src="virtual voice.avif" class="card-img-top" alt="...">
+            <div class="card-body text-center">
+              <h5 class="card-title">Virtual Voice Assistent</h5>
+              <a href="#" class="btn btn-primary">View Project</a>
+            </div>
+          </div>
+          
+          <div class="card col-md-4 custom-width">
+            <img src="grdprojectimage.avif" class="card-img-top" alt="...">
+            <div class="card-body text-center">
+              <h5 class="card-title">Golden Roots Developer</h5>
+              <a href="https://grdindia.co.in/" class="btn btn-primary">View Project</a>
+            </div>
+          </div>
+          
+          <div class="card col-md-4 custom-width">
+            <img src="daimond star.avif" class="card-img-top" alt="...">
+            <div class="card-body text-center">
+              <h5 class="card-title">Daimond Star Recycling</h5>
+              <a href="https://diamondstargrp.com/" class="btn btn-primary">View Project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Contact Me</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="contact-info mb-4">
+            <h4>Contact Information</h4>
+            <p><strong>Name:</strong> Monesh Kapoor</p>
+            <p><strong>Address:</strong> 116' C, Kalani Bag, Dewas</p>
+            <p><strong>Phone:</strong> +91-8349888244</p>
+            <p><strong>Email:</strong> kapoormonesh224@gmail.com</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <form id="contactForm">
+            <div class="mb-3">
+              <input type="text" class="form-control" id="name" placeholder="Your Name">
+              <div class="invalid-feedback">Please enter your name.</div>
+            </div>
+            <div class="mb-3">
+              <input type="email" class="form-control" id="email" placeholder="Your Email">
+              <div class="invalid-feedback">Please enter a valid email address.</div>
+            </div>
+            <div class="mb-3">
+              <textarea class="form-control" id="message" rows="5" placeholder="Your Message"></textarea>
+              <div class="invalid-feedback">Please enter your message.</div>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   
+  <!-- jQuery Validation Script -->
+  <script>
+    $(document).ready(function() {
+      $('#contactForm').on('submit', function(e) {
+        e.preventDefault();
+        
+        let isValid = true;
+
+        // Clear previous error messages
+        $('.form-control').removeClass('is-invalid');
+
+        // Validate Name
+        if ($('#name').val().trim() === '') {
+          $('#name').addClass('is-invalid');
+          isValid = false;
+        }
+
+        // Validate Email
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailPattern.test($('#email').val().trim())) {
+          $('#email').addClass('is-invalid');
+          isValid = false;
+        }
+
+        // Validate Message
+        if ($('#message').val().trim() === '') {
+          $('#message').addClass('is-invalid');
+          isValid = false;
+        }
+
+        // If valid, submit the form
+        if (isValid) {
+          // Here you can add the form submission logic (e.g., AJAX)
+          alert('Form submitted successfully!');
+        }
+      });
+    });
+  </script>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-11">
+          <p class="mb-0">&copy; 2023 Monesh Kapoor. All rights reserved.</p>
+          <p class="mb-0">Designed with ❤️ using Bootstrap</p>
+        </div>
+        <div class="col-md-1">
+          <a href="#top" class="scroll-top">^</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
